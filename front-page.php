@@ -91,6 +91,13 @@ get_header(); ?>
 
 	<?php endwhile; ?>
 
+	<div class="navigation" id="content-nav">
+		<hr />
+		<div class="next-posts">&nbsp;</div>
+		<div class="prev-posts"><a href="<?php echo get_option('home'); ?>/category/resources">More resources posts &raquo;</a><br /><br />
+		<a href="<?php echo get_option('home'); ?>/category/news">More news posts &raquo;<br />&nbsp;</div>
+	</div>
+
 	<?php /* include (STYLESHEETPATH . '/_/inc/nav.php' ); */ ?>
 
 	<?php else : ?>

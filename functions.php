@@ -18,6 +18,9 @@ register_nav_menus(
   
 // Register the sidebars
 
+if ( function_exists('register_sidebar') )
+    register_sidebar(array('name'=>'ONA Local Locator Sidebar'));
+
 if ( function_exists('register_sidebars') )
     register_sidebars(3, array('name'=>'Featured Group %d'));
 

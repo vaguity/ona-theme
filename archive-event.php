@@ -1,44 +1,29 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Events Archive
+*/
+get_header(); ?>
 
-	<div id="content">
-		
-		<?php if (have_posts()) : ?>
+<div id="content">
 
-			<div id="content-header">
- 			
- 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+	<div id="frontpageloop">
+	
+	<div id="content-header">
 
-			<?php /* If this is a category archive */ if (is_category()) { ?>
-				<h3>Archive &mdash; <?php single_cat_title(); ?></h3>
+	<h3>Latest posts</h3>
+	
+	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/bg_heading-double-line.png" class="doubleline noborder">
+	</div><!-- #content-header -->
+	
+	<?php rewind_posts(); ?>
+	
+	<?php /* query_posts('category_name=resources&posts_per_page=5'); */ ?>
+	<?php query_posts('post_type=event&posts_per_page=20'); ?>
 
-			<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-				<h3>Tag &mdash; <?php single_tag_title(); ?></h3>
-
-			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-				<h3>Archive for <?php the_time('F jS, Y'); ?></h3>
-
-			<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-				<h3>Archive for <?php the_time('F, Y'); ?></h3>
-
-			<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-				<h3 class="pagetitle">Archive for <?php the_time('Y'); ?></h3>
-
-			<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-				<h3 class="pagetitle">Author Archive</h3>
-
-			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-				<h3 class="pagetitle">Blog Archives</h3>
-			
-			<?php } ?>
-			
-			<br />
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/bg_heading-double-line.png" class="doubleline noborder">
-			
-			</div><!-- #content-header -->
-			
-			<?php while (have_posts()) : the_post(); ?>
-			
-				<?php 
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php $more = 0; ?>
+	
+						<?php 
 				$eventdate = get_post_meta($post->ID,'eventdate',true);
 				$eventtagline = get_post_meta($post->ID,'eventtagline',true);
 				$eventtype = get_the_term_list($post->ID,'eventtype','', ', ','');
@@ -49,7 +34,7 @@
 			
 		<article class="post" id="post-<?php the_ID(); ?>">
 
-			<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 			<footer class="meta">
 			<div id="event-date">Event date: <span class="event-date-bold"><?php echo date('M. j, Y', strtotime($eventdate)); ?></span></div>
@@ -84,13 +69,15 @@
 
 		</article>
 
-			<?php endwhile; ?>
+	<?php endwhile; ?>
 
-			<?php include (STYLESHEETPATH . '/_/inc/nav.php' ); ?>
-			
+	<?php /* include (STYLESHEETPATH . '/_/inc/nav.php' ); */ ?>
+
 	<?php else : ?>
 
 	<?php endif; ?>
+	
+	</div><!-- #frontpageloop -->
 
 </div><!-- #content -->
 

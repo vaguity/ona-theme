@@ -1,5 +1,5 @@
 /*   
-Theme Name: Online News Association
+Theme Name: Online News Association Theme
 Theme URI: http://journalists.org/
 Description: Child theme of HTML5 Reset Theme.
 Author: Sean Connolly
@@ -270,7 +270,7 @@ body {
 	font-family: "franklin-gothic-urw-condensed", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-.ff-serif, h1, h2, #subhead span.subhead-joincall, #subhead article, #frontpageslide #slidecontent p, #content article aside.pullquote {
+.ff-serif, h1, h2, #subhead span.subhead-joincall, #subhead article, #frontpageslide #slidecontent p, #content article aside.pullquote, #sidebar #sidebar-ona-local-locator p {
 	font-family: kulturista-web, Georgia, "Times New Roman", Times, serif;
 }
 
@@ -823,11 +823,13 @@ div#sidebar {
 }
 
 #content #content-nav .next-posts {
-float:left;
+	float:left;
+	text-align:left;
 }
 
 #content #content-nav .prev-posts {
-float:right;
+	float:right;
+	text-align:right;
 }
 
 #content article {
@@ -1045,38 +1047,82 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 /* ONA Local Locator */
 
 .locator-columns {
+	clear:both;
 	width:860px;
 }
 
 .locator-1 {
 	width:200px;
-	margin:0;
+	margin:0 0 20px 0;
 	float:left;
 }
 
 .locator-2 {
 	width:200px;
-	margin:0 20px;
+	margin:0 20px 20px 20px;
 	float:left;
 }
 
 .locator-3 {
 	width:200px;
-	margin:0 20px 0 0;
+	margin:0 20px 20px 0;
 	float:left;
 }
 
 .locator-4 {
 	width:200px;
-	margin:0;
+	margin:0 0 20px 0;
 	float:left;
 }
 
-.locator-columns h4 {
+.locator-columns h3 {
 	padding-bottom:14px;
 	background:url('images/bg_sidebar-double-line.png');
 	background-repeat:no-repeat;
 	background-position:bottom;
+}
+
+.locator-columns h3 a {
+	color:#333;
+	text-decoration:none;
+}
+
+.locator-columns h4 {
+
+}
+
+#ona-local-locator hr {
+	clear:both;
+	margin:40px 0;
+}
+
+
+#ona-local-locator article ul {
+	display: block;
+	list-style-type:none;
+	list-style-image:;
+	font-size:13px;
+	margin:10px 0;
+}
+
+#ona-local-locator article ol {
+	display:block;
+	list-style-type:decimal;
+	font-size:13px;
+	margin:10px 0;
+}
+
+#ona-local-locator article ul li, #ona-local-locator article ol ul li {
+	display: list-item;
+	margin-left:20px;
+	background:url('images/list_bullet.png') no-repeat 0 top;
+	padding-left:10px;
+}
+
+#ona-local-locator article ol li {
+	display:list-item;
+	margin-left:20px;
+	padding-left:0;
 }
 
 
@@ -1304,9 +1350,19 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 }
 
 #sidebar #sidebar-ona-local-locator p {
-	font-size:13px;
-	height:30px;
+	font-size:14px;
+	line-height:20px;
 	padding:10px 0 0 0;
+}
+
+#sidebar #sidebar-ona-local-locator li {
+	list-style-type:none;
+}
+
+#sidebar #sidebar-ona-local-locator img {
+	width:300px;
+	list-style-type:none;
+	margin:20px 0;
 }
 
 #sidebar #sidebar-ona-local-locator p a { color:#FBD940; }

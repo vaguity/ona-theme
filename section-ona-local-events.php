@@ -89,7 +89,7 @@ get_header(); ?>
 <div class="navigation" id="content-nav">
 	<hr />
 	<div class="next-posts">&nbsp;</div>
-	<div class="prev-posts"><a href="<?php echo get_option('home'); ?>/ona-local/events">More events &raquo;</a></div>
+	<div class="prev-posts"><a href="<?php echo get_option('home'); ?>/eventtype/ona-local/">More ONA Local events &raquo;</a></div>
 </div>
 
 </div><!-- #content -->
