@@ -5,7 +5,7 @@ Description: Child theme of HTML5 Reset Theme.
 Author: Sean Connolly
 Author URI: http://sean-connolly.com/
 Template: html5-reset
-Version: 1.2
+Version: 1.2.2
 */
 
 /*
@@ -1180,6 +1180,7 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 	border-bottom:1px solid #3C5F8D;
 	padding:10px 0;
 	vertical-align:center;
+
 }
 
 #sidebar #section-nav ul li:before {
@@ -1196,8 +1197,10 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 #sidebar #section-nav ul ul li {
 	font-size:13px;
 	padding:4px 0;
-	margin:0;
+	margin:0 2px 0 43px;
 	border:0;
+	text-align:left;
+	text-indent:-43px;
 }
 
 #sidebar #section-nav ul ul li a { font-weight:normal; }
@@ -1219,8 +1222,10 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 #sidebar #section-nav ul ul ul li {
 	font-size:13px;
 	padding:4px 0;
-	margin:0;
+	margin:0 2px 0 63px;
 	border:0;
+	text-align:left;
+	text-indent:-63px;
 }
 
 /* Sidebar newsletter signup */
