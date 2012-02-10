@@ -738,7 +738,7 @@ div#sidebar {
 
 #slides #frontpageslide.bgyellow { background:#FBD940; color:#000; }
 #slides #frontpageslide.bglightblue { background:#b5cde0; color:#333; }
-#slides #frontpageslide.bgdarkblue { background:#436A97; color:#fff; }
+#slides #frontpageslide.bgdarkblue { background:#213563; color:#fff; }
 
 #slides #frontpageslide.bgyellow h4 { background:#000; color:#fff; }
 #slides #frontpageslide.bglightblue h4 { background:#ff4d38; color:#fff; }
@@ -1222,10 +1222,10 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 #sidebar #section-nav ul ul ul li {
 	font-size:13px;
 	padding:4px 0;
-	margin:0 2px 0 63px;
+	margin:0 2px 0 0px;
 	border:0;
+	text-indent:-43px;
 	text-align:left;
-	text-indent:-63px;
 }
 
 /* Sidebar newsletter signup */
