@@ -779,6 +779,7 @@ div#sidebar {
 	width:240px;
 	height:240px;
 	background:url('images/bg_transparent-slide.png');
+	overflow:visible;
 }
 
 #slides #slideshow-nav {
