@@ -778,8 +778,15 @@ div#sidebar {
 	padding:10px;
 	width:240px;
 	height:240px;
-	background:url('images/bg_transparent-slide.png');
-	overflow:visible;
+	overflow:hidden;
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
 #slides #slideshow-nav {
