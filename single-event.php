@@ -10,8 +10,7 @@
 			$eventtype = get_the_term_list($post->ID,'eventtype','', ', ','');
 			$eventregistrationlink = get_post_meta($post->ID,'eventregistrationlink',true);
 			$eventlink = get_post_meta($post->ID,'eventlink',true);
-			if ($eventlink) $eventlink = $eventlink;
-			else $eventlink = get_permalink(); ?>
+			?>
 		
 		<article class="post" id="post-<?php the_ID(); ?>">
 
@@ -42,7 +41,13 @@
 				else { }
 				?>
 				
-				<a href="<?php echo $eventlink; ?>" class="jumptext">Learn more</a> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow-small.png" class="noborder"></p>
+				<?php if ($eventlink) {
+				echo '<a href="'; echo $eventlink; echo '" class="jumptext">Learn more</a> <img src="';	echo bloginfo('stylesheet_directory'); echo '/images/arrow-small.png" class="noborder">';
+				}
+				
+				else { }
+				?>
+				</p>
 
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 

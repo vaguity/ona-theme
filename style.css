@@ -867,7 +867,6 @@ div#sidebar {
 #content article img {
 	padding:2px;
 	border:1px solid #CEDEEB;
-	margin:4px;
 }
 
 #content article blockquote {
@@ -876,6 +875,14 @@ div#sidebar {
 	padding:10px 20px;
 	line-height:16px;
 	clear:both;
+}
+
+#content article .entry blockquote ul li {
+	display: list-item;
+	margin-left:20px;
+	background:none;
+	list-style-type:disc;
+	padding-left:0px;
 }
 
 #content article img.noborder {
@@ -896,6 +903,14 @@ div#sidebar {
 	margin:10px 0;
 }
 
+#content article .entry ul ul {
+	margin:10px 20px;
+}
+
+#content article .entry ul ol {
+	margin:10px 40px;
+}
+
 #content article .entry ol {
 	display:block;
 	list-style-type:decimal;
@@ -914,6 +929,7 @@ div#sidebar {
 	display:list-item;
 	margin-left:20px;
 	padding-left:0;
+	background:none;
 }
 
 #content article .entry ul.spaced li, #content article .entry ol.spaced li {
@@ -937,6 +953,13 @@ div#sidebar {
 #content article .alignnone {
 	float:none;
 	margin:0 0 0 0;
+}
+
+#content article .wp-caption-text {
+	margin:2px 0;
+	font-size:10px;
+	font-weight:bold;
+	font-style:italic;
 }
 
 #content article aside {
@@ -1103,7 +1126,6 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 	clear:both;
 	margin:40px 0;
 }
-
 
 #ona-local-locator article ul {
 	display: block;

@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div id="subhead">
 
-<div id="subhead-content">
+<div id="subhead-content" class="ona-local">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			

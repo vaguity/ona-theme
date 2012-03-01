@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div id="content" class="full-page">
 
-	<div id="ona-local-calendar">
+	<div id="ona-local-events">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
@@ -32,6 +32,8 @@ get_header(); ?>
 	</div><!-- #content-header -->
 
 <div id="ona-local-loop">
+			
+				<?php rewind_posts(); ?>
 			
 				<?php $posts = z_get_posts_in_zone('eventlistzone'); ?>
 					<?php foreach( $posts as $post ) :
