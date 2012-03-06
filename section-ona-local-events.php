@@ -6,7 +6,7 @@ get_header(); ?>
 
 <?php global $more; ?>
 
-<div id="content" class="full-page">
+<div id="content">
 
 	<div id="ona-local-events">
 
@@ -95,5 +95,20 @@ get_header(); ?>
 </div>
 
 </div><!-- #content -->
+
+<div id="sidebar">
+
+<?php /* include 'sidebar-eventlist.php' */ ?>
+
+	<div id="sidebar-section-header">
+	<h3>ONA Local</h3>
+	</div><!-- #sidebar-section-header" -->
+
+	<nav id="section-nav"><?php wp_nav_menu( array('menu' => 'Section: ONA Local' )); ?></nav>
+	
+	<?php include 'sidebar-ona-local-locator.php' ?>
+
+<?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>

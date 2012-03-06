@@ -44,12 +44,12 @@ get_header(); ?>
 
 	<div id="content-header">
 
-	<h3>Featured events</h3>
+<h3>Featured events</h3>
 	
 	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/bg_heading-double-line.png" class="doubleline noborder">
 	</div><!-- #content-header -->
 
-<div id="ona-local-loop">
+	<div id="ona-local-loop">
 			
 				<?php $posts = z_get_posts_in_zone('eventlistzone'); ?>
 					<?php foreach( $posts as $post ) :
@@ -116,7 +116,7 @@ get_header(); ?>
 
 <?php include 'sidebar-ona-local-locator.php' ?>
 
-<?php include 'sidebar-eventlist.php' ?>
+<?php /* include 'sidebar-eventlist.php' */ ?>
 
 	<div id="sidebar-section-header">
 	<h3>ONA Local</h3>

@@ -1077,6 +1077,11 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 
 /* ONA Local Locator */
 
+#ona-local-locator article iframe {
+	padding:2px;
+	border:1px solid #cedeeb;
+}
+
 .locator-columns {
 	clear:both;
 	width:860px;
