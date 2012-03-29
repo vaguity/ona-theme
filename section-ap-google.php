@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Section: AP-Google
+*/
+get_header(); ?>
 
 	<div id="content">
 	
@@ -29,7 +33,14 @@
 	</div><!-- #content -->
 
 <div id="sidebar">
+
+	<div id="sidebar-section-header">
+	<h3>AP-Google Scholarship</h3>
+	</div><!-- #sidebar-section-header" -->
+
+	<nav id="section-nav"><?php wp_nav_menu( array('menu' => 'Section: AP-Google' )); ?></nav>
+
 <?php get_sidebar(); ?>
-</div><!-- #sidebar -->
+</div>
 
 <?php get_footer(); ?>

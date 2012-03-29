@@ -12,7 +12,8 @@ register_nav_menus(
 		'section-conference' => __( 'Section: Conference' ),
 		'section-awards' => __( 'Section: Awards' ),
 		'section-nextgen' => __( 'Section: Next Gen' ),
-		'section-support' => __( 'Section: Support ONA' )
+		'section-support' => __( 'Section: Support ONA' ),
+		'section-support' => __( 'Section: AP-Google' )
     	)
   );
   
@@ -23,6 +24,9 @@ if ( function_exists('register_sidebar') )
 
 if ( function_exists('register_sidebars') )
     register_sidebars(3, array('name'=>'Featured Group %d'));
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array('name'=>'AP-Google Overview'));
 
 // Add theme options
 
