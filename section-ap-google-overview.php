@@ -17,10 +17,14 @@ get_header(); ?>
 	<div id="ap-google-loop">
 	
 	<div id="ap-google-about">
+	<article class="entry">
+	
 	<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('AP-Google Overview')) : else : ?>
 	
 	<?php endif; ?>
-	</div>
+
+	</article>
+	</div><!-- #ap-google-about -->
 
 	<div id="content-header">
 
@@ -31,7 +35,7 @@ get_header(); ?>
 	
 	<?php rewind_posts(); ?>
 	
-	<?php query_posts('category_name=ap-google-scholarship&posts_per_page=10'); ?>
+	<?php query_posts('category_name=ap-google-scholarship&posts_per_page=2'); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<?php $more = 0; ?>

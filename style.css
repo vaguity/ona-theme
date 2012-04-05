@@ -268,7 +268,7 @@ body {
 
 .ff-condensed, nav#site-nav, h3, h4, div#members-nav, span.tweet-time, #content footer.meta, #content article #post-info #category, #content article #tags, #content #content-nav, #frontpageslide #slidecontent h3.slidetitle, #sidebar #section-nav, #sidebar #sidebar-posts, #sidebar #sidebar-posts-eventtype, .jumptext, div.Tumblr, div.Tumblr h2, #sidebar-widgets h2, #sidebar-widgets #twitter-2 ul li span.time-meta, #content #ap-google-loop h2.widgettitle
  {
-	font-family: "franklin-gothic-urw-condensed", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+	font-family: "franklin-gothic-urw-condensed", Arial, "Lucida Grande", Verdana, sans-serif;
 }
 
 .ff-serif, h1, h2, #subhead span.subhead-joincall, #subhead article, #frontpageslide #slidecontent p, #content article aside.pullquote, #sidebar #sidebar-ona-local-locator p {
@@ -1179,26 +1179,16 @@ footer.meta #tags span.tags-header, footer.meta #event-tags span.tags-header {
 	text-transform:uppercase;
 }
 
-#content #ap-google-loop #ap-google-about {
-	margin:40px;
-}
-
 #content #ap-google-loop #ap-google-about li {
 	list-style-type:none;
 }
 
-#content #ap-google-loop #ap-google-about p {
-	margin:10px 0;
-	font-size:13px;
-}
-
-#content #ap-google-loop #ap-google-about p.double-line-bg {
+#content #ap-google-loop #ap-google-about .double-line-bg {
 	margin:10px 0;
 	font-size:13px;
 	width:100%;
 	background:url('images/bg_heading-double-line.png') no-repeat top;
 }
-
 
 /* Sidebar posts */
 
