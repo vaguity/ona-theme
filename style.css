@@ -685,7 +685,7 @@ div#sidebar {
 	float:right;
 	width:470px;
 	height:250px;
-	margin:40px 40px 10px 0;
+	margin:40px 40px 0 0;
 	padding:0;
 	overflow:hidden;
 }
